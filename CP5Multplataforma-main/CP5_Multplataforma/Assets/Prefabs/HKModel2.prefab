@@ -369,6 +369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2531253204533262878}
+  - component: {fileID: -7791237478367345334}
   m_Layer: 0
   m_Name: HKModel2
   m_TagString: Untagged
@@ -386,7 +387,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.10418, y: 4.1597, z: 0.18425}
-  m_LocalScale: {x: 81.001, y: 81.001, z: 81.001}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1323927762089826263}
@@ -397,6 +398,19 @@ Transform:
   - {fileID: 1907955430917002923}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7791237478367345334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4556574986835850290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69b3f1805a6cbad48bbd467bc720a83f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpinScript
+  rotationSpeed: {x: 0, y: 45, z: 0}
 --- !u!1 &6207540915369605892
 GameObject:
   m_ObjectHideFlags: 0

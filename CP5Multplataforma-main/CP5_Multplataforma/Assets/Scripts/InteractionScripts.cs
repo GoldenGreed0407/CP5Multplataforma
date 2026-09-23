@@ -1,5 +1,4 @@
 using UnityEngine;
-using Vuforia;
 
 public class InteractionScripts : MonoBehaviour
 {
@@ -10,7 +9,7 @@ public class InteractionScripts : MonoBehaviour
 
     public void create()
     {
-        instance = Instantiate(prefab[0], anchor.position, anchor.rotation, anchor);
+        instance = Instantiate(prefab[Random.Range(0,3)], anchor.position, anchor.rotation, anchor);
     }
 
     public void destroy()

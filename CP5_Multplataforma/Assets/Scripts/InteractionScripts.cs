@@ -1,16 +1,26 @@
 using UnityEngine;
+using Vuforia;
 
 public class InteractionScripts : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] GameObject []prefab;
+    [SerializeField] Transform anchor;
+
+    GameObject instance;
+
+    public void create()
     {
-        
+        instance = Instantiate(prefab[0], anchor.position, anchor.rotation, anchor);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void destroy()
     {
-        
+        Destroy(instance);
+    }
+
+    public void change()
+    {
+        destroy();
+        create();
     }
 }
